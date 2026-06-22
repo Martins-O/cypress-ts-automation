@@ -10,7 +10,11 @@ describe('Restful Booker API - Auth Tests', () => {
         }).then((response) => {
             expect(response.status).to.eq(200)
             expect(response.body).to.have.property('token')
-            expect(response.body.token).to.not.be.empty
+            expect(response.body.token)
+                .to
+                .not
+                .be
+                .empty
         })
     })
 
@@ -50,3 +54,7 @@ describe('Restful Booker API - Auth Tests', () => {
         })
     })
 })
+
+function expect(token: any) {
+    throw new Error("Function not implemented.")
+}
