@@ -2,9 +2,9 @@ name: Cypress API Tests
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [ main, indev ]
   pull_request:
-    branches: [ master, main ]
+    branches: [ main, indev ]
 
 jobs:
   cypress-run:
